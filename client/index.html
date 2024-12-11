@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DEMO</title>
+    <link rel="stylesheet" href="/libs/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./assets/css/main.css" />
+    <!-- Google icons -->
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container py-5">
+      <div class="row">
+        <div class="col-md-4">
+          <div class="card card-body bg-white mb-4">
+            <h1>
+              <span class="material-icons"> grid_view </span>
+                <div class="img"><img src="./assets/img/_Cacao.jpg" alt=""></div>
+            </h1>
+            <h6 class="text-muted">Cacao Chain</h6>
+            <div class="d-flex align-items-center">
+              <span class="material-icons"> account_balance_wallet </span>
+              <span class="ms-2">Billetera</span>
+            </div>
+            <span id="account"></span>
+          </div>
+
+          <form id="productForm" class="card card-body bg-white">
+            <h4 >Guardar un producto</h4>
+            <input
+              type="text"
+              id="product"
+              class="form-control bg-light border-0 rounded-0 text-dark my-2"
+              placeholder="Ingresa el producto"
+              autofocus
+            />
+            <input
+              type="text"
+              id="process"
+              class="form-control bg-light border-0 rounded-0 text-dark my-2"
+              placeholder="Ingresa el proceso"
+              autofocus
+            />
+            <input
+              type="text"
+              id="code"
+              class="form-control bg-light border-0 rounded-0 text-dark my-2"
+              placeholder="Ingresa el codigo"
+              autofocus
+            />
+            <input
+              type="text"
+              id="batch"
+              class="form-control bg-light border-0 rounded-0 text-dark my-2"
+              placeholder="Ingresa el lote"
+              autofocus
+            />
+            <input
+              type="text"
+              id="location"
+              class="form-control bg-light border-0 rounded-0 text-dark my-2"
+              placeholder="Ingresa la ubicación"
+              autofocus
+            />
+            <textarea
+              id="description"
+              rows="2"
+              class="form-control bg-light border-0 rounded-0 text-dark my-3"
+              placeholder="Ingresa una descripción"
+            ></textarea>
+            <button class="btn btn-primary">Save</button>
+          </form>
+        </div>
+        <div class="col-md-8 mt-3">
+          <div id="productsList"></div>
+        </div>
+      </div>
+    </div>
+
+    
+    <!-- <script src="/libs/web3/dist/web3.min.js"></script> -->
+    <script src="./libs/@truffle/contract/browser-dist/truffle-contract.min.js"></script>
+    <script src="./app.js"></script>
+    <script src="./ui.js"></script>
+  </body>
+</html>

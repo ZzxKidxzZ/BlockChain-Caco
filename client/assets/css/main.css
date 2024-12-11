@@ -1,0 +1,19 @@
+body {
+    background: #fbfdff;
+    color: #000000;
+}
+
+.img {
+  width: 150px;
+  height: 210px;
+  margin: -30px 30px ;
+}
+
+.img img{
+  width: 230px;
+  height: 180px;
+}
+
+.text_card{
+  color: #000000;
+}
